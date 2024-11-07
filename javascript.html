@@ -17,6 +17,7 @@
         for(let i=2; i<=100; i +=2){
             console.log(i);   
         }
+        3
         let count = 0
         for (let i = 1; i < 100; i++){
             if (i % 2 === 0) {
@@ -24,8 +25,26 @@
             }
             console.log("The number of even numbers between 1 and 100 is:" + count);
             ;
-1           
+           
         }
+        function computeMultiples ( num1="2", num2="10") {
+            let multiples1 = [];
+            let multiples2 = [];
+
+            for(let i = 1; i<=10; i++) {
+                multiples1.push(num1*i);
+                multiples2.push(num2*i);
+            }
+            
+            return {
+                multiplesOfNum1: multiples1,
+                multiplesOfNum2: multiples2
+            };
+        }
+        const result = computeMultiples(2,10);
+        console.log("Multiples of 2", result.multiplesOfNum1);
+        console.log("Multiples of 10", result.multiplesOfNum2);
+        
         
 
         const fruits = new Map()
